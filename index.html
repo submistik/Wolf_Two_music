@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf two песни</title>
+    <link rel="stylesheet" href="styles.css">
+   <style>
+   body {
+    background-color: #000;
+    display: ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.neon-text {
+    font-size: 4em;
+    color: #00ffef;
+    text-align: center;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 100px #ff00ff, 0 0 150px #ff00ff;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 100px #ff00ff, 0 0 150px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 35px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff;
+    }
+}
+   </style>
+</head>
+<body>
+   <h6><div class="neon-text">Wolf Two песни</div></h6>
+    <script src="script.js"></script>
+    <script>
+    // JavaScript может быть использован для добавления интерактивности, например, изменения текста или эффектов при наведении курсора.
+document.querySelector('.neon-text').addEventListener('mouseover', function() {
+    this.style.animationDuration = '1s';
+});
+
+document.querySelector('.neon-text').addEventListener('mouseout', function() {
+    this.style.animationDuration = '1.5s';
+});
+    </script>
+    <font color="red">lavin-ZeroOne and Wolf Two</font></br></br>
+    <font color="red">ПРИЗРАК ВО МНЕ!!</font></br></br>
+    <font color="red">GAITE FUNK</font>
+   <h4><font color=green>Предложить идею</font></h4>
+   <input type="text" id="name" required>
+                <br>
+                <label for="email"><font color=green>E-mail:</font></label>
+                <input type="email" id="email" required>
+                <br>
+                <textarea placeholder="Сообщение..."></textarea>
+                <br>
+                <button type="submit">Отправить</button>
+  </body>
+</html>
